@@ -1,0 +1,401 @@
+1. List the directory contents date wise sorted. ( man ls)
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ls -lai >q1.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ cat q1.txt 
+total 32
+793563 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 15:54 .
+787188 drwxrwxr-x 5 sunbeam sunbeam 4096 Sep 30 14:33 ..
+793621 -rw-rw-r-- 1 sunbeam sunbeam   39 Sep 30 15:19 A.txt
+791300 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 combined.txt
+793620 -rw-rw-r-- 1 sunbeam sunbeam   53 Sep 30 15:28 error_file
+791317 -rw-rw-r-- 1 sunbeam sunbeam   35 Sep 30 15:35 file1.txt
+793608 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 file2.txt
+793605 -rw-rw-r-- 1 sunbeam sunbeam   40 Sep 30 15:23 file_list.txt
+793671 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 15:54 q1.txt
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ls -lrait 
+total 36
+787188 drwxrwxr-x 5 sunbeam sunbeam 4096 Sep 30 14:33 ..
+791300 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 combined.txt
+793608 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 file2.txt
+793621 -rw-rw-r-- 1 sunbeam sunbeam   39 Sep 30 15:19 A.txt
+793605 -rw-rw-r-- 1 sunbeam sunbeam   40 Sep 30 15:23 file_list.txt
+793620 -rw-rw-r-- 1 sunbeam sunbeam   53 Sep 30 15:28 error_file
+791317 -rw-rw-r-- 1 sunbeam sunbeam   35 Sep 30 15:35 file1.txt
+793563 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 15:54 .
+793671 -rw-rw-r-- 1 sunbeam sunbeam  571 Sep 30 15:54 q1.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ^C
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ 
+
+
+
+
+2. List the directory contents size wise sorted.(man ls)
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ls -lSai
+total 36
+793563 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 15:54 .
+787188 drwxrwxr-x 5 sunbeam sunbeam 4096 Sep 30 14:33 ..
+793671 -rw-rw-r-- 1 sunbeam sunbeam  571 Sep 30 15:54 q1.txt
+793620 -rw-rw-r-- 1 sunbeam sunbeam   53 Sep 30 15:28 error_file
+793605 -rw-rw-r-- 1 sunbeam sunbeam   40 Sep 30 15:23 file_list.txt
+793621 -rw-rw-r-- 1 sunbeam sunbeam   39 Sep 30 15:19 A.txt
+791317 -rw-rw-r-- 1 sunbeam sunbeam   35 Sep 30 15:35 file1.txt
+791300 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 combined.txt
+793608 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 file2.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ls -lSair
+total 36
+793608 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 file2.txt
+791300 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 combined.txt
+791317 -rw-rw-r-- 1 sunbeam sunbeam   35 Sep 30 15:35 file1.txt
+793621 -rw-rw-r-- 1 sunbeam sunbeam   39 Sep 30 15:19 A.txt
+793605 -rw-rw-r-- 1 sunbeam sunbeam   40 Sep 30 15:23 file_list.txt
+793620 -rw-rw-r-- 1 sunbeam sunbeam   53 Sep 30 15:28 error_file
+793671 -rw-rw-r-- 1 sunbeam sunbeam  571 Sep 30 15:54 q1.txt
+787188 drwxrwxr-x 5 sunbeam sunbeam 4096 Sep 30 14:33 ..
+793563 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 15:54 .
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ 
+
+
+
+3. List directory contents along with their inode no. (man ls)
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ls -i
+793621 A.txt         793620 error_file  793608 file2.txt      793671 q1.txt
+791300 combined.txt  791317 file1.txt   793605 file_list.txt
+
+
+
+
+4. List the contents of the subdirectory.
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux$ ls -lai Assignment_2/
+total 36
+793563 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 15:54 .
+787188 drwxrwxr-x 5 sunbeam sunbeam 4096 Sep 30 14:33 ..
+793621 -rw-rw-r-- 1 sunbeam sunbeam   39 Sep 30 15:19 A.txt
+791300 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 combined.txt
+793620 -rw-rw-r-- 1 sunbeam sunbeam   53 Sep 30 15:28 error_file
+791317 -rw-rw-r-- 1 sunbeam sunbeam   35 Sep 30 15:35 file1.txt
+793608 -rw-rw-r-- 1 sunbeam sunbeam   20 Sep 30 15:06 file2.txt
+793605 -rw-rw-r-- 1 sunbeam sunbeam   40 Sep 30 15:23 file_list.txt
+793671 -rw-rw-r-- 1 sunbeam sunbeam  571 Sep 30 15:54 q1.txt
+
+
+
+
+5. Create a file, write your surname and name in it and save.
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux$ cat > file.txt
+Neha
+Morkhande
+
+i. now open the same file and add your address in it and save.
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux$ cat >> file.txt 
+Address- Shirur Anantpal, Latur
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux$
+
+ii. reopen the same file and check your name and address in it.
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux$ cat file.txt 
+Neha
+Morkhande
+Address- Shirur Anantpal, Latur
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux
+
+
+
+
+6. how to change the time stamp of file (man touch)
+
+A.txt file information before change the time->
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ls -l
+total 28
+-rw-rw-r-- 1 sunbeam sunbeam  39 Sep 30 15:19 A.txt
+-rw-rw-r-- 1 sunbeam sunbeam  20 Sep 30 15:06 combined.txt
+-rw-rw-r-- 1 sunbeam sunbeam  53 Sep 30 15:28 error_file
+-rw-rw-r-- 1 sunbeam sunbeam  35 Sep 30 15:35 file1.txt
+-rw-rw-r-- 1 sunbeam sunbeam  20 Sep 30 15:06 file2.txt
+-rw-rw-r-- 1 sunbeam sunbeam  40 Sep 30 15:23 file_list.txt
+-rw-rw-r-- 1 sunbeam sunbeam 571 Sep 30 15:54 q1.txt
+
+A.txt file information after change the time->
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ touch A.txt 
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2$ ls -l
+total 28
+-rw-rw-r-- 1 sunbeam sunbeam  39 Sep 30 17:07 A.txt
+-rw-rw-r-- 1 sunbeam sunbeam  20 Sep 30 15:06 combined.txt
+-rw-rw-r-- 1 sunbeam sunbeam  53 Sep 30 15:28 error_file
+-rw-rw-r-- 1 sunbeam sunbeam  35 Sep 30 15:35 file1.txt
+-rw-rw-r-- 1 sunbeam sunbeam  20 Sep 30 15:06 file2.txt
+-rw-rw-r-- 1 sunbeam sunbeam  40 Sep 30 15:23 file_list.txt
+-rw-rw-r-- 1 sunbeam sunbeam 571 Sep 30 15:54 q1.txt
+
+
+
+
+7. Create directory structure : Give following commands,
+
+-> mkdir one
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder$ mkdir one
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder$ ls -a
+.  ..  one
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder$ 
+
+
+-> cd one
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder$ cd one
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$
+
+-> touch 1.txt 11.txt 111.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ touch 1.txt 11.txt 111.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ ls -a
+.  ..  111.txt  11.txt  1.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ 
+
+-> mkdir two
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ mkdir two
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ ls
+111.txt  11.txt  1.txt  two
+
+
+-> cd two
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ cd two
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two$
+
+-> touch 2.txt 22.txt 222.txt
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two$ touch 2.txt 22.txt 222.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two$ ls
+222.txt  22.txt  2.txt
+
+-> mkdir three
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two$ mkdir three
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two$ ls 
+222.txt  22.txt  2.txt  three
+
+
+-> cd three
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two$ cd three
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$
+
+-> touch 3.txt 33.txt 333.txt
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ touch 3.txt 33.txt 333.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ ls
+333.txt  33.txt  3.txt
+
+-> mkdir four
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ mkdir four
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ ls
+333.txt  33.txt  3.txt  four
+
+-> cd four
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ cd four
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four$
+
+-> touch 4.txt 44.txt 444.txt
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four$ touch 4.txt 44.txt 444.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four$ ls
+444.txt  44.txt  4.txt
+
+-> mkdir five
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four$ mkdir five
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four$ ls
+444.txt  44.txt  4.txt  five
+
+-> cd five
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four$ cd five
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five$ 
+
+-> touch 5.txt 55.txt 555.txt
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five$ ls
+555.txt  55.txt  5.txt
+
+-> cd ~ (i.e. go to your home directory)
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five$ cd ~
+sunbeam@sunbeam-Swift-SFG14-71:~$ 
+
+
+
+
+clear
+8. Considering above directory structure , Do following operations :
+
+i. list the directory contents of directory
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ ls -lai /home/sunbeam/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five/
+total 8
+787140 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 17:36 .
+794061 drwxrwxr-x 3 sunbeam sunbeam 4096 Sep 30 17:35 ..
+794109 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:36 555.txt
+794081 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:36 55.txt
+794057 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:36 5.txt
+
+
+
+
+ii. write your name in a file named "44.txt" of directory "four" from current directory.
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ cat >>  Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/44.txt 
+Neha
+Morkhande
+sunbeam@sunbeam-Swift-SFG14-71:~$ cat Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/44.txt 
+Neha
+Morkhande
+
+
+iii. remove the file named "555.txt" from directory "five" from current directory.
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ rm ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five/555.txt 
+sunbeam@sunbeam-Swift-SFG14-71:~$ ls ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five/
+55.txt  5.txt
+sunbeam@sunbeam-Swift-SFG14-71:~$ 
+
+
+iv. change directory to five one/two/three/four/five/ ).( i.e. cd one/two/three/four/five/ ).
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ cd ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five/
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/four/five$ 
+
+v. write your course name in file named "3.txt" which resides in directory "three" from current directory (i.e.five).also read the same file.
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ cat >> ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/3.txt 
+DBDA
+sunbeam@sunbeam-Swift-SFG14-71:~$ cat ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/3.txt 
+DBDA
+sunbeam@sunbeam-Swift-SFG14-71:~$ 
+
+vi. list the contents of directory "two" from current directory (i.e. five).
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ ls -lai ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/
+total 12
+793944 drwxrwxr-x 3 sunbeam sunbeam 4096 Sep 30 17:29 .
+793624 drwxrwxr-x 3 sunbeam sunbeam 4096 Sep 30 17:24 ..
+794055 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:28 222.txt
+794054 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:28 22.txt
+790986 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:28 2.txt
+790479 drwxrwxr-x 3 sunbeam sunbeam 4096 Sep 30 17:31 three
+sunbeam@sunbeam-Swift-SFG14-71:~$ 
+
+
+
+vii. remove file named "222.txt" which belongs to directory "two" from current directory (i.e. five)
+rm 
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ rm ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/222.txt 
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ ls ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/
+22.txt  2.txt  three
+
+
+viii. now change the directory to "one"
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ cd ./Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ 
+
+ix. remove all files only from directory named "five" from current directory (i.e. one)
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ rm ./two/three/four/five/*
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ tree
+.
+├── 111.txt
+├── 11.txt
+├── 1.txt
+└── two
+    ├── 22.txt
+    ├── 2.txt
+    └── three
+        ├── 333.txt
+        ├── 33.txt
+        ├── 3.txt
+        └── four
+            ├── 444.txt
+            ├── 44.txt
+            ├── 4.txt
+            └── five
+
+4 directories, 11 files
+
+
+x. remove directory named "five" from current directory (i.e. one)
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ rm -r ./two/three/four/five/
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ tree
+.
+├── 111.txt
+├── 11.txt
+├── 1.txt
+└── two
+    ├── 22.txt
+    ├── 2.txt
+    └── three
+        ├── 333.txt
+        ├── 33.txt
+        ├── 3.txt
+        └── four
+            ├── 444.txt
+            ├── 44.txt
+            └── 4.txt
+
+3 directories, 11 files
+
+
+xi. remove whole directory named "four" from current directory (i.e. one)
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ rm -r ./two/three/four/ 
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ tree
+.
+├── 111.txt
+├── 11.txt
+├── 1.txt
+└── two
+    ├── 22.txt
+    ├── 2.txt
+    └── three
+        ├── 333.txt
+        ├── 33.txt
+        └── 3.txt
+
+2 directories, 8 files
+
+xii. change to your home directory.
+
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one$ cd ~
+sunbeam@sunbeam-Swift-SFG14-71:~$ 
+
+
+9. change the time stamp of file named "3.txt" which resides
+in directory named "three".(man touch)
+
+sunbeam@sunbeam-Swift-SFG14-71:~$ cd Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three/
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ ls 
+333.txt  33.txt  3.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ ls -lai
+total 12
+790479 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 18:41 .
+793944 drwxrwxr-x 3 sunbeam sunbeam 4096 Sep 30 18:25 ..
+794060 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:31 333.txt
+794059 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:31 33.txt
+793587 -rw-rw-r-- 1 sunbeam sunbeam    5 Sep 30 18:21 3.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ touch 3.txt 
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ ls -lai
+total 12
+790479 drwxrwxr-x 2 sunbeam sunbeam 4096 Sep 30 18:41 .
+793944 drwxrwxr-x 3 sunbeam sunbeam 4096 Sep 30 18:25 ..
+794060 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:31 333.txt
+794059 -rw-rw-r-- 1 sunbeam sunbeam    0 Sep 30 17:31 33.txt
+793587 -rw-rw-r-- 1 sunbeam sunbeam    5 Sep 30 18:45 3.txt
+sunbeam@sunbeam-Swift-SFG14-71:~/Desktop/SUNBEAM/linux/Assignment_2/assignment_folder/one/two/three$ 
+
