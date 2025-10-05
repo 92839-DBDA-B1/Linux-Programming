@@ -1,0 +1,51 @@
+#!/bin/bashi
+
+<<comment
+
+1. Create a file named "data.txt" and write the following lines in it(write as it is).
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+compose the commands fulfilled following requirement
+
+2. list the lines having word "files" (man grep)
+list the lines having word "file" (man grep)
+list the lines which don't have word "files" (man grep)
+list the lines having word "have" . (man grep)
+list the lines starts with letter "f" (man grep)
+list the lines ends with "." (man grep)
+list only first two lines.(man head)
+list only last three lines.(man tail)
+list line no.3,4 and 5 . (man head and tail)
+
+comment
+
+
+echo "Number of lines in the assignment : $(wc -l data.txt)"
+echo "Number of words in the assignment : $(wc -w data.txt)"
+echo "Number of character in the assignment : $(wc -c data.txt)"
+
+echo "\n\n"
+
+echo -e "$(cat data.txt)"
+
+echo -e "lines having word files \n $(grep -w "files" data.txt)"
+
+echo -e "\nlines having word file \n $(grep -w "file" data.txt)"
+
+echo -e "\nlines which dont have word files \n $(grep -wv "files" data.txt)"
+
+echo -e "\nlines which have word - have : \n $(grep -w "have" data.txt)"
+
+echo -e "\nlines which start with letter f : \n $(grep "^f" data.txt)"
+
+echo -e "\nlines which end with . are : \n $(grep ".$" data.txt)"
+
+echo -e "\nFirst two line :  \n $(head -n 2 data.txt|nl)"
+
+echo -e "\nLast three lines are : \n $(tail -n 3 data.txt|nl)"
+
+echo -e "\nline 3,4,5  : \n $(head -n 5 data.txt |  tail -n 3 data.txt | nl ))"
